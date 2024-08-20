@@ -1,6 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -27,21 +27,26 @@ const Header = () => {
             tabIndex={0}
             className="w-[21rem] menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 max-w-xs p-2 shadow"
             style={{
-              boxShadow: '0 20px 25px -5px rgba(252, 211, 78, 0.5), 0 8px 10px -6px rgba(252, 211, 78, 0.5)',
+              boxShadow:
+                "0 20px 25px -5px rgba(252, 211, 78, 0.5), 0 8px 10px -6px rgba(252, 211, 78, 0.5)",
             }}
           >
-            <li className="cursor-pointer" style={{ backgroundColor: '#FCD34E', color: 'black' }}>
-              <a>Home</a>
+            <li
+              className="cursor-pointer"
+              style={{ backgroundColor: "#FCD34E", color: "black" }}
+            >
+              <Link href="/">Home</Link>
             </li>
             <li className="cursor-pointer">
-              <a>About Us</a>
+              <Link href="/pages/aboutus">About Us</Link>
             </li>
             <li className="cursor-pointer">
-              <a>Services</a>
+              <Link href="/pages/services">Services</Link>
               <ul
                 className="p-2 w-full lg:w-[20rem] hidden lg:block z-50"
                 style={{
-                  boxShadow: '0 20px 25px -5px rgba(252, 211, 78, 0.5), 0 8px 10px -6px rgba(252, 211, 78, 0.5)',
+                  boxShadow:
+                    "0 20px 25px -5px rgba(252, 211, 78, 0.5), 0 8px 10px -6px rgba(252, 211, 78, 0.5)",
                 }}
               >
                 <li className="cursor-pointer">
@@ -66,24 +71,26 @@ const Header = () => {
                   <a className="whitespace-nowrap">Hoarder House Clean Outs</a>
                 </li>
                 <li className="cursor-pointer">
-                  <a className="whitespace-nowrap">Hoarder House Special Cleanup</a>
+                  <a className="whitespace-nowrap">
+                    Hoarder House Special Cleanup
+                  </a>
                 </li>
               </ul>
             </li>
             <li className="cursor-pointer">
-              <a>Service Areas</a>
+              <Link href="/pages/serviceareas">Service Areas</Link>
             </li>
             <li className="cursor-pointer">
-              <a>Gallery</a>
+              <Link href="/pages/gallery">Gallery</Link>
             </li>
             <li className="cursor-pointer">
-              <a>Blog</a>
+              <Link href="/pages/blog">Blog</Link>
             </li>
             <li className="cursor-pointer">
-              <a>Contact Us</a>
+              <Link href="/pages/contactus">Contact Us</Link>
             </li>
             <li className="cursor-pointer">
-              <a>Booking</a>
+              <Link href="/pages/booking">Booking</Link>
             </li>
           </ul>
         </div>
@@ -102,18 +109,21 @@ const Header = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 z-50">
           <li className="cursor-pointer">
-            <a>Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li className="cursor-pointer">
-            <a>About Us</a>
+            <Link href="/pages/aboutus">About Us</Link>
           </li>
           <li className="cursor-pointer">
             <details>
-              <summary>Services</summary>
+              <summary>
+                <Link href="/pages/services">Services</Link>
+              </summary>
               <ul
-                className="p-2 w-[20rem] hidden lg:block z-50"
+                className="p-2 w-[20rem] hidden lg:block z-80"
                 style={{
-                  boxShadow: '0 20px 25px -5px rgba(252, 211, 78, 0.5), 0 8px 10px -6px rgba(252, 211, 78, 0.5)',
+                  boxShadow:
+                    "0 20px 25px -5px rgba(252, 211, 78, 0.5), 0 8px 10px -6px rgba(252, 211, 78, 0.5)",
                 }}
               >
                 <li className="cursor-pointer">
@@ -138,31 +148,33 @@ const Header = () => {
                   <a className="whitespace-nowrap">Hoarder House Clean Outs</a>
                 </li>
                 <li className="cursor-pointer">
-                  <a className="whitespace-nowrap">Hoarder House Special Cleanup</a>
+                  <a className="whitespace-nowrap">
+                    Hoarder House Special Cleanup
+                  </a>
                 </li>
               </ul>
             </details>
           </li>
           <li className="cursor-pointer ">
-            <a>Service Areas</a>
+            <Link href="/pages/serviceareas">Service Areas</Link>
           </li>
           <li className="cursor-pointer">
-            <a>Gallery</a>
+            <Link href="/pages/gallery">Gallery</Link>
           </li>
           <li className="cursor-pointer">
-            <a>Blog</a>
+            <Link href="/pages/blog">Blog</Link>
           </li>
           <li className="cursor-pointer">
-            <a>Contact Us</a>
+            <Link href="/pages/contactus">Contact Us</Link>
           </li>
           <li className="cursor-pointer">
-            <a>Booking</a>
+            <Link href="/pages/booking">Booking</Link>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
         <a className="btn bg-[#FCD34E] text-black hover:bg-black hover:text-[#FCD34E] cursor-pointer z-40">
-          Button
+          Call Now
         </a>
       </div>
     </div>

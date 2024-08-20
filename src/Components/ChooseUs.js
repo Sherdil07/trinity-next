@@ -87,7 +87,7 @@ const ChooseUs = () => {
             playsInline
             className="w-full h-auto rounded-lg"
           >
-            <source src="/images/junk-removal-services.mp4" type="video/mp4" />
+            <source src="/images/junk-removal-services-up.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
