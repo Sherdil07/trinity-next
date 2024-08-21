@@ -9,22 +9,26 @@ const Hero = ({ topRef }) => {
     visible: {
       opacity: 1,
       transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.5,
+        delayChildren: 0.1, // Further reduced delay
+        staggerChildren: 0.1, // Further reduced stagger
       },
     },
   };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
+    visible: {
+      opacity: 1, 
+      y: 0,
+      transition: { duration: 0.2 }, // Further reduced duration
+    },
   };
 
   const imageVariants = {
     animate: {
       y: [0, -20, 0], // Moving up, down, and back to the original position
       transition: {
-        duration: 4, // Adjust duration as needed
+        duration: 3, // Adjust duration as needed
         ease: "easeInOut",
         repeat: Infinity, // Infinite loop
       },

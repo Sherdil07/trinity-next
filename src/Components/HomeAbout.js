@@ -25,8 +25,8 @@ const HomeAbout = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 1.5, // Slower animation
-        staggerChildren: 0.5, // Increased delay between animations
+        duration: 0.5, // Faster animation
+        staggerChildren: 0.2, // Faster sequence between animations
       },
     },
   };
@@ -37,8 +37,8 @@ const HomeAbout = () => {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 1.5, // Slower animation
-        staggerChildren: 0.5, // Increased delay between animations
+        duration: 0.5, // Faster animation
+        staggerChildren: 0.2, // Faster sequence between animations
       },
     },
   };

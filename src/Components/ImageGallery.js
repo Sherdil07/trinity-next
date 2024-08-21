@@ -79,7 +79,7 @@ const ImageGallery = ({ limit }) => {
       {limit && limit < images.length && (
         <div className="text-center">
           <a
-            href="/images" // Adjust this URL based on your routing setup
+            href="/pages/gallery" // Adjust this URL based on your routing setup
             className="inline-block px-6 py-2 bg-yellow-400 text-black font-semibold rounded-lg shadow-md hover:bg-yellow-500 transition duration-300"
           >
             View All

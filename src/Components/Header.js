@@ -50,7 +50,7 @@ const Header = () => {
                 }}
               >
                 <li className="cursor-pointer">
-                  <a className="whitespace-nowrap">Junk Removal</a>
+                  <Link href="/pages/services/JunkRemoval" className="whitespace-nowrap">Junk Removal</Link>
                 </li>
                 <li className="cursor-pointer">
                   <a className="whitespace-nowrap">Property Clean Up</a>
@@ -127,30 +127,30 @@ const Header = () => {
                 }}
               >
                 <li className="cursor-pointer">
-                  <a className="whitespace-nowrap">Junk Removal</a>
+                  <Link href="/pages/services/JunkRemoval"  className="whitespace-nowrap">Junk Removal</Link>
                 </li>
                 <li className="cursor-pointer">
-                  <a className="whitespace-nowrap">Property Clean Up</a>
+                  <Link href="/pages/services/PropertyCleanUp" className="whitespace-nowrap">Property Clean Up</Link>
                 </li>
                 <li className="cursor-pointer">
-                  <a className="whitespace-nowrap">Furniture Removal</a>
+                  <Link href="/pages/services/FurnitureRemoval" className="whitespace-nowrap">Furniture Removal</Link>
                 </li>
                 <li className="cursor-pointer">
-                  <a className="whitespace-nowrap">Appliance Removal</a>
+                  <Link href="/pages/services/ApplianceRemoval" className="whitespace-nowrap">Appliance Removal</Link>
                 </li>
                 <li className="cursor-pointer">
-                  <a className="whitespace-nowrap">Yard Debris Removal</a>
+                  <Link href="/pages/services/YardDebrisRemoval" className="whitespace-nowrap">Yard Debris Removal</Link>
                 </li>
                 <li className="cursor-pointer">
-                  <a className="whitespace-nowrap">Construction Clean Up</a>
+                  <Link href="/pages/services/ConstructionCleanUp" className="whitespace-nowrap">Construction Clean Up</Link>
                 </li>
                 <li className="cursor-pointer">
-                  <a className="whitespace-nowrap">Hoarder House Clean Outs</a>
+                  <Link href="/pages/services/HoarderHouseCleanOuts" className="whitespace-nowrap">Hoarder House Clean Outs</Link>
                 </li>
                 <li className="cursor-pointer">
-                  <a className="whitespace-nowrap">
+                  <Link href="/pages/services/HoarderHouseSpecialCleanUp" className="whitespace-nowrap">
                     Hoarder House Special Cleanup
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </details>

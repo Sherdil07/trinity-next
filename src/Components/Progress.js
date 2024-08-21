@@ -16,7 +16,7 @@ const Progress = () => {
     if (inView) {
       controls.start("visible");
   
-      const durationYears = 1 * 1000; // 1 second for "Years in business"
+      const durationYears = 0.1 * 1000; // 1 second for "Years in business"
       const durationOthers = 7 * 1000; // 3 seconds for the other counters
   
       // Years in business (2241)

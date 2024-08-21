@@ -35,7 +35,7 @@ const ChooseUs = () => {
           className="lg:w-1/2 lg:pr-10"
           initial={{ x: -100, opacity: 0 }}
           animate={inView ? { x: 0, opacity: 1 } : {}}
-          transition={{ duration: 1.5 }}  // Slower transition
+          transition={{ duration: 0.5 }}  // Faster transition
         >
           <p className="text-lg font-semibold mt-6 mb-4 flex items-center">
             <i className="fa fa-mobile fa-lg me-1"></i>{" "}
@@ -49,7 +49,7 @@ const ChooseUs = () => {
             className="text-lg mb-4"
             initial={{ x: -100, opacity: 0 }}
             animate={inView ? { x: 0, opacity: 1 } : {}}
-            transition={{ duration: 2, delay: 0.5 }}  // Slower transition
+            transition={{ duration: 0.5, delay: 0.1 }}  // Faster transition and reduced delay
           >
             Choosing us means opting for unparalleled excellence, innovation,
             and quality. We stand out in a crowded market for several compelling
@@ -62,7 +62,7 @@ const ChooseUs = () => {
             className="bg-[#FCD34E] p-6 rounded-lg"
             initial={{ opacity: 0, scale: 0.8, translateZ: -100 }}
             animate={inView ? { opacity: 1, scale: 1, translateZ: 0 } : {}}
-            transition={{ duration: 2.5, ease: "easeOut" }}  // Slower transition
+            transition={{ duration: 0.7, ease: "easeOut" }}  // Faster transition
             exit={{ opacity: 0 }}
           >
             <div className="flex items-center mb-4">

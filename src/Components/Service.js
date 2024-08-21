@@ -8,9 +8,9 @@ const Service = () => {
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.5, // Reduced duration for faster transitions
+        duration: 0.2, // Further reduced duration for faster transitions
         when: "beforeChildren",
-        staggerChildren: 0.2, // Reduced stagger duration for quicker sequence
+        staggerChildren: 0.1, // Further reduced stagger duration for quicker sequence
       },
     },
   };
@@ -20,7 +20,7 @@ const Service = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5 }, // Reduced duration
+      transition: { duration: 0.2 }, // Further reduced duration
     },
   };
 
@@ -29,10 +29,9 @@ const Service = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5 }, // Reduced duration
+      transition: { duration: 0.2 }, // Further reduced duration
     },
   };
-
   return (
     <div>
       <section className="relative bg-gray-50">
