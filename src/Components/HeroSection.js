@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = ({ topRef }) => {
   const containerVariants = {
@@ -82,9 +83,14 @@ const Hero = ({ topRef }) => {
             debris cleanup etc.
           </motion.p>
           <motion.div className="mt-8" variants={itemVariants}>
-            <button className="bg-yellow-500 rounded-full text-black font-inter font-medium uppercase shadow-md hover:bg-yellow-600 transition-all py-4 px-8">
-              Explore More
-            </button>
+            <Link href='/pages/services'>
+            <button
+            type="button"
+            className="w-auto px-8 py-4 text-base font-semibold text-black transition-all duration-200 bg-[#FCD148] border border-transparent rounded-lg hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+          >
+            Explore More
+          </button>
+            </Link>
           </motion.div>
         </motion.div>
       </div>

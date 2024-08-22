@@ -47,7 +47,7 @@ function ContactUs() {
       </div>
 
       {/* book now  */}
-      <div className="min-h-[70vh] rounded-3xl grid grid-cols-[1fr_1fr] bg-[#f4f4f4] m-20 pb-24">
+      <div className="min-h-[70vh] rounded-3xl grid grid-cols-1 md:grid-cols-[1fr_1fr] bg-[#f4f4f4] m-5 md:m-20 pb-24">
         {/* left side  */}
         <div className="text-black p-10">
           <form onSubmit={handleSubmit(onSubmit)}>

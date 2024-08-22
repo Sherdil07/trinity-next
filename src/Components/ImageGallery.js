@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 const images = [
@@ -14,6 +14,43 @@ const images = [
 ];
 
 const ImageGallery = ({ limit }) => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (videoRef.current) {
+          if (entry.isIntersecting) {
+            videoRef.current.play();
+          } else {
+              videoRef.current.pause();
+          }
+        }
+      });
+    };
+
+    const observerOptions = {
+      threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    const setupObserver = () => {
+      if (videoRef.current) {
+        observer.observe(videoRef.current);
+      }
+    };
+
+    // Delay observer setup to ensure all elements are rendered
+    setTimeout(setupObserver, 100); // Adjust the delay as needed
+
+    return () => {
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
+    };
+  }, []);
+
   // Determine how many images to display
   const displayedImages = limit ? images.slice(0, limit) : images;
 
@@ -27,15 +64,13 @@ const ImageGallery = ({ limit }) => {
 
   return (
     <div className="p-6" style={{ backgroundColor: "white" }}>
-      <div >
-       
+      <div>
         <h2
           className="text-3xl font-bold text-center mb-6"
           style={{ color: "black" }} // Apply the custom color here
         >
           See in Pictures How We Transform Spaces
         </h2>
-       
       </div>
 
       {/* Video Section */}
@@ -44,14 +79,12 @@ const ImageGallery = ({ limit }) => {
           className="overflow-hidden rounded-lg shadow-lg border-4 border-yellow-400"
           style={{ width: `${videoWidth}px`, height: `${videoHeight}px` }}
         >
-          <iframe
+          <video
+            ref={videoRef}
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/5E_2RnPMDfY" // Embed link for the video
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
+            src="/images/Logo_2.mp4"
+            controls
             className="rounded-lg"
           />
         </div>

@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const textVariants = {
   hidden: { opacity: 0 },
@@ -49,16 +50,16 @@ const ServicePage = () => {
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-2  ">
                   <p className="text-sm font-medium text-gray-900">
-                    <a href="#" title="">
-                      Category
-                    </a>
+                    <Link href="/pages/services/JunkRemoval" title="">
+                    Learn More
+                    </Link>
                   </p>
-                  <span className="text-sm font-medium text-gray-900">•</span>
+                  <span className="text-sm font-medium text-gray-900"></span>
                   <p className="text-sm font-medium text-gray-900">
-                    7 Mins Read
+                    
                   </p>
                 </div>
-                <a href="#" title="" className="" role="button">
+                <Link href="/pages/services/JunkRemoval" title="" className="" role="button">
                   <svg
                     className="w-5 h-5 text-[#006400] transition-all duration-200 group-hover:text-gray-900"
                     xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +74,7 @@ const ServicePage = () => {
                     <line x1="17" y1="7" x2="7" y2="17"></line>
                     <polyline points="8 7 17 7 17 16"></polyline>
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -108,16 +109,16 @@ const ServicePage = () => {
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-2  ">
                   <p className="text-sm font-medium text-gray-900">
-                    <a href="#" title="">
-                      Category
-                    </a>
+                    <Link href="/pages/services/PropertyCleanUp" title="">
+                      Learn More
+                    </Link>
                   </p>
-                  <span className="text-sm font-medium text-gray-900">•</span>
+                  <span className="text-sm font-medium text-gray-900"></span>
                   <p className="text-sm font-medium text-gray-900">
-                    7 Mins Read
+                    
                   </p>
                 </div>
-                <a href="#" title="" className="" role="button">
+                <Link href="/pages/services/PropertyCleanUp" title="" className="" role="button">
                   <svg
                     className="w-5 h-5 text-[#006400] transition-all duration-200 group-hover:text-gray-900"
                     xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +133,7 @@ const ServicePage = () => {
                     <line x1="17" y1="7" x2="7" y2="17"></line>
                     <polyline points="8 7 17 7 17 16"></polyline>
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -167,16 +168,16 @@ const ServicePage = () => {
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-2  ">
                   <p className="text-sm font-medium text-gray-900">
-                    <a href="#" title="">
-                      Category
-                    </a>
+                    <Link href="/pages/services/FurnitureRemoval" title="">
+                      Learn More
+                    </Link>
                   </p>
-                  <span className="text-sm font-medium text-gray-900">•</span>
+                  <span className="text-sm font-medium text-gray-900"></span>
                   <p className="text-sm font-medium text-gray-900">
-                    7 Mins Read
+                    
                   </p>
                 </div>
-                <a href="#" title="" className="" role="button">
+                <Link href="/pages/services/FurnitureRemoval" title="" className="" role="button">
                   <svg
                     className="w-5 h-5 text-[#006400] transition-all duration-200 group-hover:text-gray-900"
                     xmlns="http://www.w3.org/2000/svg"
@@ -191,7 +192,7 @@ const ServicePage = () => {
                     <line x1="17" y1="7" x2="7" y2="17"></line>
                     <polyline points="8 7 17 7 17 16"></polyline>
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -227,16 +228,16 @@ const ServicePage = () => {
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-2  ">
                   <p className="text-sm font-medium text-gray-900">
-                    <a href="#" title="">
-                      Category
-                    </a>
+                    <Link href="/pages/services/ApplianceRemoval" title="">
+                      Learn More
+                    </Link>
                   </p>
-                  <span className="text-sm font-medium text-gray-900">•</span>
+                  <span className="text-sm font-medium text-gray-900"></span>
                   <p className="text-sm font-medium text-gray-900">
-                    7 Mins Read
+                    
                   </p>
                 </div>
-                <a href="#" title="" className="" role="button">
+                <Link href="/pages/services/ApplianceRemoval" title="" className="" role="button">
                   <svg
                     className="w-5 h-5 text-[#006400] transition-all duration-200 group-hover:text-gray-900"
                     xmlns="http://www.w3.org/2000/svg"
@@ -251,7 +252,7 @@ const ServicePage = () => {
                     <line x1="17" y1="7" x2="7" y2="17"></line>
                     <polyline points="8 7 17 7 17 16"></polyline>
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,8 +1,8 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Image from "next/image";
+import Link from "next/link";
 
 const HomeAbout = () => {
   const controls = useAnimation();
@@ -25,8 +25,8 @@ const HomeAbout = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5, // Faster animation
-        staggerChildren: 0.2, // Faster sequence between animations
+        duration: 0.5, 
+        staggerChildren: 0.2,
       },
     },
   };
@@ -37,8 +37,8 @@ const HomeAbout = () => {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.5, // Faster animation
-        staggerChildren: 0.2, // Faster sequence between animations
+        duration: 0.5,
+        staggerChildren: 0.2,
       },
     },
   };
@@ -57,16 +57,34 @@ const HomeAbout = () => {
             src="/images/about-us-trinity-1.png"
             alt="Service Image 1"
             variants={imageVariants}
+            className="w-full h-full border-4 border-[#FCD148] rounded-lg object-cover"
           />
           <motion.img
             src="/images/about-us-trinity-2.jpeg"
             alt="Service Image 2"
-            className="h-full"
             variants={imageVariants}
+            className="w-full h-full border-4 border-[#FCD148] rounded-lg object-cover"
           />
         </div>
-        <motion.div className="w-full mt-4" variants={imageVariants}>
-          <img src="/images/service-1.png" alt="Service Image 3" className="w-full" />
+
+        {/* Card Component */}
+        <motion.div
+          className="flex items-center p-6 bg-[#FCD148] rounded-lg shadow-lg mt-6"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <div className="flex-shrink-0">
+            <span className="text-black text-4xl animate-bounce">
+              <i className="fas fa-star"></i>
+            </span>
+          </div>
+          <div className="ml-4">
+            <h3 className="text-2xl font-bold">
+              <span>10+</span>
+            </h3>
+            <p className="text-gray-600">Years Of Experience</p>
+          </div>
         </motion.div>
       </motion.div>
 
@@ -78,7 +96,7 @@ const HomeAbout = () => {
         className="bg-white text-black p-10"
       >
         <motion.span
-          className="inline-block mt-20 text-2xl uppercase border-b-4 border-yellow-600"
+          className="inline-block text-2xl uppercase border-b-4 border-[#FCD148]"
           variants={textVariants}
         >
           About Us
@@ -105,6 +123,20 @@ const HomeAbout = () => {
           spaces and transforming lives with care. With green practices we make
           sure that your environment is also safe and healthy.
         </motion.p>
+          {/* Button */}
+          <motion.div
+          className="pt-6 flex justify-start"
+          variants={textVariants}
+        >
+          <Link href="/pages/aboutus">
+          <button
+            type="button"
+            className="w-auto px-8 py-4 text-base font-semibold text-black transition-all duration-200 bg-[#FCD148] border border-transparent rounded-lg hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+          >
+            Learn More
+          </button>
+          </Link>
+        </motion.div>
       </motion.div>
     </div>
   );
