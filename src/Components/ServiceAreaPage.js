@@ -612,10 +612,10 @@ const ServiceAreaPage = () => {
             <div className="flex-1 px-4 py-5 sm:p-6">
               <a href="#" title="">
                 <p className="text-lg font-bold text-gray-900">
-                  Land O' Lakes FL
+                  Land O Lakes FL
                 </p>
                 <p className="mt-3 text-sm font-normal leading-6 text-gray-500 line-clamp-3">
-                  Land O' Lakes, FL, benefits from Trinity Junk Removal's
+                  Land O Lakes, FL, benefits from Trinity Junk Removals
                   expertise in efficient junk removal. Our services cater to
                   residential and commercial needs, ensuring a clean and
                   organized space.
@@ -841,7 +841,7 @@ const ServiceAreaPage = () => {
               <a href="#" title="">
                 <p className="text-lg font-bold text-gray-900">Riverview, FL</p>
                 <p className="mt-3 text-sm font-normal leading-6 text-gray-500 line-clamp-3">
-                  Riverview residents benefit from Trinity Junk Removal's
+                  Riverview residents benefit from Trinity Junk Removal
                   expertise in efficient and affordable junk removal. We
                   prioritize customer satisfaction, leaving behind a clean and
                   organized space.
@@ -1187,7 +1187,7 @@ const ServiceAreaPage = () => {
               <a href="#" title="">
                 <p className="text-lg font-bold text-gray-900">Ruskin, FL</p>
                 <p className="mt-3 text-sm font-normal leading-6 text-gray-500 line-clamp-3">
-                  Ruskin residents benefit from Trinity Junk Removal's expertise
+                  Ruskin residents benefit from Trinity Junk Removal expertise
                   in efficient and affordable junk removal. We prioritize
                   customer satisfaction, leaving behind a clean and organized
                   space.
